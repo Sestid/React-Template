@@ -1,0 +1,26 @@
+.content {
+    color: #FFFFFF;
+    width: '100%';
+    margin: 20px;
+    padding: 20px;
+    overflow: scroll;
+
+    .title {
+        font-size: 24px;
+        font-weight: bold;
+        color: red;
+    }
+
+    .title-content {
+        padding: 10px;
+        >span {
+            color: green;
+        }
+
+        button {
+            width: 100px;
+            height: 40px;
+            padding: 10px;            
+        }
+    }
+}

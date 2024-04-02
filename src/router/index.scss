@@ -1,0 +1,62 @@
+@function autoPx($px) {
+    @return (100vw / 1920) * $px;
+}
+body {
+    background-color: rgba(33, 32, 46, 1);
+    overflow: hidden;
+}
+#root {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+}
+@font-face {
+    font-family: PangMenZhengDao;
+    src: url('./assets/fonts/PangMenZhengDao.ttf');
+}
+@font-face {
+    font-family: 'REEJI';
+    src: url('./assets/fonts/REEJI.ttf');
+}
+@font-face {
+    font-family: 'FX-LED';
+    src: url('./assets/fonts/FX-LED.TTF');
+}
+@font-face {
+    font-family: 'PuHuiTi35';
+    src: url('./assets/fonts/AlibabaPuHuiTi-2-35-Thin.otf');
+}
+@font-face {
+    font-family: 'PuHuiTi45';
+    src: url('./assets/fonts/AlibabaPuHuiTi-2-45-Light.otf');
+}
+@font-face {
+    font-family: 'PuHuiTi55';
+    src: url('./assets/fonts/AlibabaPuHuiTi-2-55-Regular.otf');
+}
+@font-face {
+    font-family: 'PuHuiTi65';
+    src: url('./assets/fonts/AlibabaPuHuiTi-2-65-Medium.otf');
+}
+@font-face {
+    font-family: 'PuHuiTi75';
+    src: url('./assets/fonts/AlibabaPuHuiTi-2-75-SemiBold.otf');
+}
+@font-face {
+    font-family: 'PuHuiTi85';
+    src: url('./assets/fonts/AlibabaPuHuiTi-2-85-Bold.otf');
+}
+@font-face {
+    font-family: 'PuHuiTi95';
+    src: url('./assets/fonts/AlibabaPuHuiTi-2-95-ExtraBold.otf');
+}
+@font-face {
+    font-family: 'PuHuiTi105';
+    src: url('./assets/fonts/AlibabaPuHuiTi-2-105-Heavy.otf');
+}
+@font-face {
+    font-family: 'PuHuiTi115';
+    src: url('./assets/fonts/AlibabaPuHuiTi-2-115-Black.otf');
+}

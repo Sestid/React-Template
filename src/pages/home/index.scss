@@ -1,0 +1,19 @@
+.state {
+    background: url('../../assets/image/blue-panel.png') 0px 0px no-repeat;
+    color: #FFFFFF;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+
+    .title {
+        font-size: 24px;
+        font-weight: bold;
+        color: red;
+    }
+
+    .title-content {
+        > span {
+            color: green;
+        }
+    }
+}
