@@ -18,6 +18,11 @@ React18、Ts、Vite、react-use、recoil、antd等技术
         * [3-4-5. state](#3-4-5-state)
         * [3-4-6. styles](#3-4-6-styles)
         * [3-4-7. untils](#3-4-7-untils)
+        * [3-4-8. api](#3-4-8-api)
+            * [3-4-8-1. axios](#3-4-8-1-axios)
+            * [3-4-8-2. index](#3-4-8-2-index)
+        * [3-4-9. common](#3-4-9-common)
+        * [3-4-10. components](#3-4-10-components)
     
 ### 1. 安装、启动、打包
 
@@ -152,9 +157,53 @@ fonts：字体； image：图片； json：静态数据； svg：svg的dom代码
 
 ##### 3-4-4. router
 
+配置页面路由
+```JavaScript
+import './Router.scss';
+import './reset.scss';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Home from './pages/home';
+import Page1 from './pages/page1';
+import Page2 from './pages/page2';
+
+function Router() {
+    const router = createBrowserRouter([
+        {
+            path: '/',
+            element: <Home />,
+        },
+        {
+            path: '/page1',
+            element: <Page1 />,
+        },
+        {
+            path: '/page2',
+            element: <Page2 />,
+        },
+    ]);
+    return <RouterProvider router={router} />;
+}
+
+export default Router;
+```
+
 ##### 3-4-5. state
+
+状态管理数据
+```JavaScript
+import { atom } from 'recoil';
+
+export const currentProjectIdAtom = atom<string | null>({
+    key: 'currentProjectIdAtom',
+    default: null,
+});
+```
 
 ##### 3-4-6. styles
 
+公共样式
+
 ##### 3-4-7. untils
+
+公共工具
 
