@@ -130,7 +130,9 @@ export default defineConfig({
 
 #### 3-3. apiPy
 
-本地启动mock数据接口的服务
+本地启动mock数据接口的服务 
+## 启动命令
+    py3 api.py
 
 #### 3-4. src
 
@@ -148,13 +150,15 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     </RecoilRoot>,
 );
 ```
+RecoilRoot 是状态管理库，类似redux
+详细介绍：https://zhuanlan.zhihu.com/p/572425602?utm_id=0
 
 ##### 3-4-2. assets
-
+![avatar](./img/assets.jpg)
 fonts：字体； image：图片； json：静态数据； svg：svg的dom代码
 
 ##### 3-4-3. pages
-
+![avatar](./img/pages.jpg)
 存放前端页面的文件
 
 ##### 3-4-4. router
@@ -200,16 +204,19 @@ export const currentProjectIdAtom = atom<string | null>({
     default: null,
 });
 ```
+用法：
+![avatar](./img/state.jpg)
 
 ##### 3-4-6. styles
-
+![avatar](./img/styles.jpg)
 公共样式
 
 ##### 3-4-7. untils
-
+![avatar](./img/untils.jpg)
 公共工具
 
 ##### 3-4-8. api
+![avatar](./img/api.jpg)
 
 ###### 3-4-8-1. axios
 
@@ -292,7 +299,7 @@ export const api = {
 ```
 
 ##### 3-4-9. common
-
+![avatar](./img/common.jpg)
 存放公共的各类静态自定义变量
 constants.ts：
 ```JavaScript
@@ -306,7 +313,7 @@ export const labelTextStyle = {
 ```
 
 ##### 3-4-10. components
-
+![avatar](./img/components.jpg)
 存放前端公共组件，可以是ui组件、也可以是业务组件。
 Content.tsx：
 ```JavaScript
