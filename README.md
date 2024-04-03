@@ -7,10 +7,10 @@ React18、Ts、Vite、react-use、recoil、antd等技术
 * [1. 安装、启动、打包](#1-安装、启动、打包)
 * [2. 文件目录结构](#2-文件目录结构)
 * [3. 文件详细介绍](#3-文件详细介绍)
-    * [3-1. index](#3-1-index)
-    * [3.2. vite.config.ts](#3.2-vite.config.ts)
-    * [3.3. api.py](#3.3-api.py)
-    * [3.4. src](3.4-#src)
+    * [3-1. index(html)](#3-1-index(html))
+    * [3-2. vite(config)](#3-2-vite(config))
+    * [3-3. api(py)](#3-3-api(py))
+    * [3-4. src](#3-4-src)
 
 ### 1. 安装、启动、打包
 
@@ -58,7 +58,7 @@ React18、Ts、Vite、react-use、recoil、antd等技术
 
 ### 3. 文件详细介绍
 
-#### 3-1. index
+#### 3-1. index(html)
 
 ```JavaScript
 <!DOCTYPE html>
@@ -76,7 +76,7 @@ React18、Ts、Vite、react-use、recoil、antd等技术
 </html>
 ```
 
-##### 3.2. vite.config.ts
+#### 3-2. vite(config
 
 target的值：填入后端地址ip
 
@@ -114,9 +114,9 @@ export default defineConfig({
 });
 ```
 
-##### 3.3. api.py
+#### 3-3. api(py)
 
 本地启动mock数据接口的服务
 
-##### 3.4. src
+#### 3-4. src
 
