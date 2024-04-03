@@ -12,6 +12,12 @@ React18、Ts、Vite、react-use、recoil、antd等技术
     * [3-3. apiPy](#3-3-apiPy)
     * [3-4. src](#3-4-src)
         * [3-4-1. index](#3-4-1-index)
+        * [3-4-2. assets](#3-4-2-assets)
+        * [3-4-3. pages](#3-4-3-pages)
+        * [3-4-4. router](#3-4-4-router)
+        * [3-4-5. state](#3-4-5-state)
+        * [3-4-6. styles](#3-4-6-styles)
+        * [3-4-7. untils](#3-4-7-untils)
     
 ### 1. 安装、启动、打包
 
@@ -135,4 +141,20 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     </RecoilRoot>,
 );
 ```
+
+##### 3-4-2. assets
+
+fonts：字体； image：图片； json：静态数据； svg：svg的dom代码
+
+##### 3-4-3. pages
+
+存放前端页面的文件
+
+##### 3-4-4. router
+
+##### 3-4-5. state
+
+##### 3-4-6. styles
+
+##### 3-4-7. untils
 
