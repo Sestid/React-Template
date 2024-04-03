@@ -5,7 +5,7 @@ React18、Ts、Vite、react-use、recoil、antd等技术
 ### 目录
 
 - [1. 安装、启动、打包](#1-安装、启动、打包)
-- [2. JavaScript 有几种类型的值？你能画一下他们的内存图吗？](#2-javascript-有几种类型的值你能画一下他们的内存图吗)
+- [2. 文件目录结构](#2-文件目录结构)
 - [3. 什么是堆？什么是栈？它们之间有什么区别和联系？](#3-什么是堆什么是栈它们之间有什么区别和联系)
 - [4. 内部属性 [[Class]] 是什么？](#4-内部属性-class-是什么)
 - [5. 介绍 js 有哪些内置对象？](#5-介绍-js-有哪些内置对象)
@@ -31,13 +31,8 @@ React18、Ts、Vite、react-use、recoil、antd等技术
 ## 打包
     npm run build
 
-# 如何联调
 
-在`vite.config.ts`文件中打开, target的值：填入后端地址ip
-
-`target: http://192.168.43.239:8000/` 
-
-### 一、目录结构
+#### 2. 文件目录结构
 ```JavaScript
         index.html // 项目主html文件
         vite.config.ts // vite配置
