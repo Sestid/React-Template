@@ -301,6 +301,7 @@ export const api = {
 ##### 3-4-9. common
 ![avatar](./img/common.jpg)
 存放公共的各类静态自定义变量
+
 constants.ts：
 ```JavaScript
 const fontSize = window.screen.width >= 3840 ? 24 : 12;
@@ -315,6 +316,7 @@ export const labelTextStyle = {
 ##### 3-4-10. components
 ![avatar](./img/components.jpg)
 存放前端公共组件，可以是ui组件、也可以是业务组件。
+
 Content.tsx：
 ```JavaScript
 import React, { memo } from "react";
