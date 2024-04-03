@@ -58,7 +58,7 @@ React18、Ts、Vite、react-use、recoil、antd等技术
 
 ### 3. 文件详细介绍
 
-#### 3.1. index.html
+#### 3.1-index.html
 
 ```JavaScript
 <!DOCTYPE html>
