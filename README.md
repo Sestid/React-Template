@@ -6,7 +6,7 @@ React18、Ts、Vite、react-use、recoil、antd等技术
 
 - [1. 安装、启动、打包](#1-安装、启动、打包)
 - [2. 文件目录结构](#2-文件目录结构)
-- [3.文件详细介绍](#3-文件详细介绍)
+- [3. 文件详细介绍](#3-文件详细介绍)
     - [3.1 index.html](#3.1-index.html)
     - [3.2 vite.config.ts](#3.2-vite.config.ts)
     - [3.3 api.py](#3.3-api.py)
@@ -56,7 +56,7 @@ React18、Ts、Vite、react-use、recoil、antd等技术
         └── untils // 公共工具
 ```
 
-#### 3.文件详细介绍
+#### 3. 文件详细介绍
 
 #### 3.1 index.html
 
