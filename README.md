@@ -207,3 +207,116 @@ export const currentProjectIdAtom = atom<string | null>({
 
 公共工具
 
+##### 3-4-8. api
+
+###### 3-4-8-1. axios
+
+封装axios
+```JavaScript
+import { message } from 'antd';
+import axios from 'axios';
+
+axios.interceptors.request.use(config => {
+    if (config.method === 'get') {
+        if (!config.params) {
+            config.params = {};
+        }
+        config.params._t = Date.now();
+    }
+    return config;
+});
+
+axios.interceptors.response.use(
+    response => {
+        const { code, msg } = response.data;
+        if (code !== 200 && code !== 0) {
+            message.error(`code：${msg}`);
+            return Promise.reject(msg);
+        }
+        return response.data; /*  */
+    },
+    error => {
+        console.log(error);
+        return Promise.reject(error);
+    },
+);
+```
+
+###### 3-4-8-2. index
+
+前端请求接口函数配置
+```JavaScript
+import './axios';
+import axios from 'axios';
+
+interface Response<T> {
+    code: 200 | 500;
+    msg: string;
+    data: T;
+}
+
+export interface Ratio {
+    [key: string]: number;
+}
+
+export interface DevDataInfo {
+    name: string,
+    sex: string,
+    age: number,
+}
+
+export interface OtherInfo {
+    otherProps: Ratio[];
+}
+
+export const api = {
+    // 本地接口假数据测试
+    getdevData:async (url?: string): Promise<Response<DevDataInfo>> => {
+        const { data } = await axios.get('/dev-api/code', { params: { url } });
+        return data;
+    },
+
+    // 调接口方法测试
+    getTestData:async (url: string): Promise<{}> => {
+        const { data } = await axios.get('/api/v2/nav', { params: { url } });
+        return data;
+    },
+    postTestData: async (params: any): Promise<{}> => {
+        const { data } = await axios.post('/mcp/pc/pcsearch', params);
+        return data;
+    },
+};
+
+```
+
+##### 3-4-9. common
+
+存放公共的各类静态自定义变量
+constants.ts：
+```JavaScript
+const fontSize = window.screen.width >= 3840 ? 24 : 12;
+export const labelTextStyle = {
+    fontSize,
+    fontFamily: 'PingFang SC',
+    color: '#CAC056',
+    lineHeight: 35,
+};
+```
+
+##### 3-4-10. components
+
+存放前端公共组件，可以是ui组件、也可以是业务组件。
+Content.tsx：
+```JavaScript
+import React, { memo } from "react";
+import "../styles/content.scss";
+
+interface Props {
+    children?: React.ReactNode;
+}
+const Content: React.FC<Props> = memo((props) => {
+    return <div className='content'>{props.children}</div>;
+});
+export default Content;
+```
+
