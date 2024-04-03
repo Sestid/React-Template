@@ -11,7 +11,8 @@ React18、Ts、Vite、react-use、recoil、antd等技术
     * [3-2. viteConfig](#3-2-viteConfig)
     * [3-3. apiPy](#3-3-apiPy)
     * [3-4. src](#3-4-src)
-
+        * [3-4-1. index](#3-4-1-index)
+    
 ### 1. 安装、启动、打包
 
 # yarn 依赖
@@ -119,4 +120,19 @@ export default defineConfig({
 本地启动mock数据接口的服务
 
 #### 3-4. src
+
+##### 3-4-1. index
+
+```JavaScript
+import ReactDOM from 'react-dom/client';
+import Router from './Router.tsx';
+import 'antd/dist/reset.css';
+import { RecoilRoot } from 'recoil';
+
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+    <RecoilRoot>
+        <Router />
+    </RecoilRoot>,
+);
+```
 
