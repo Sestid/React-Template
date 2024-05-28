@@ -204,6 +204,8 @@ export const currentProjectIdAtom = atom<string | null>({
     default: null,
 });
 ```
+设置值：
+![avatar](./img/setState.jpg)
 用法：
 ![avatar](./img/state.jpg)
 
