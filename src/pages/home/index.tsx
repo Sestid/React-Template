@@ -15,7 +15,7 @@ const HomeContent: React.FC = memo(props => {
             <Header title='系统首页' active='home' />
             <Content>
                 <div className='state'>
-                    <h1 className='title'>状态管理 </h1>
+                    <h1 className='title mt-12'>状态管理 </h1>
                     <div className='title-content'>选择的项目id：<span>{projectId}</span></div>
                 </div>
             </Content>
