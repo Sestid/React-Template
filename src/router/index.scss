@@ -12,6 +12,19 @@ body {
     height: 100%;
     background-repeat: repeat;
 }
+// 滚动条样式
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #4e5d6c;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+    background-color: #1e2b30;
+    border-radius: 3px;
+}
 @font-face {
     font-family: PangMenZhengDao;
     src: url('./assets/fonts/PangMenZhengDao.ttf');
