@@ -1,3 +1,4 @@
+@import './variables';
 .header {
     color: rgba(86, 186, 202, 1);
     width: 100%;
@@ -56,7 +57,7 @@
         a {
             outline-style: none;
             text-decoration-line: none;
-            color: rgba(115, 253, 255, 1);
+            color: $button-primary-text;
         }
         &.active {
             background-image: url(../assets/image/active-tab.png);
@@ -86,13 +87,13 @@
         font-size: 28px;
         font-family: REEJI;
         font-weight: normal;
-        color: #ffffff;
+        color: $text;
     }
     .date-week {
         font-size: 12px;
         font-family: Microsoft YaHei;
         font-weight: bold;
-        color: #ffffff;
+        color: $text;
         text-align: center;
         margin-top: 4px;
     }
@@ -100,12 +101,12 @@
         font-size: 24px;
         font-family: Microsoft YaHei;
         font-weight: bold;
-        color: #ffffff;
+        color: $text;
     }
 }
 .scene-list-men {
     width: 200px !important;
-    background: rgba(37, 77, 115, 1);
+    background: $select-bg;
     .ant-divider {
         margin: 7px 0;
         border-block-start: 1px solid rgba(5, 5, 5, 0.5);
@@ -114,7 +115,7 @@
         padding: 0 10px 3px 10px;
     }
     .ant-select-item {
-        color: #fff !important;
+        color: $text !important;
     }
     .ant-select-item-option-selected {
         background: rgba(9, 220, 254, 0.49) !important;
