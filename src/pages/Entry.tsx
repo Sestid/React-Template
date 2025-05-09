@@ -9,7 +9,6 @@ const Index: React.FC = memo(props => {
             <Content>
                 <div className='entry-content'>
                     <Link className='entry-box' to='/page3'>header布局</Link>
-                    <Link className='entry-box' to='/survey'>silder布局</Link>
                 </div>
             </Content>
         </>

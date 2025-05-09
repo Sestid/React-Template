@@ -17,6 +17,7 @@
             cursor: pointer;
             transition: all 0.3s ease-in-out;
             position: relative;
+            background: url('../assets/image/tab.png') no-repeat center;
 
             &:hover {
                 background-color: rgba(204, 204, 204, 1);
